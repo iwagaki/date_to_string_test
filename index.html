@@ -5,17 +5,30 @@
 <script type="text/javascript">
 <!--
 
-  var d1 = new Date();
-  document.write("<div>" + d1.toString() + "</div>");
+  function showToString() {
+    var d = new Date();
+    document.write("<div>" + d.toString() + "</div>");
+  }
 
-  var d2 = new Date();
-  document.write("<div>" + d2.toLocaleString() + "</div>");
+  function showToLocaleString() {
+    var d = new Date();
+    document.write("<div>" + d.toLocaleString() + "</div>");
+  }
 
-  var d3 = new Date(d2.toLocaleString());
-  document.write("<div>" + d3.toString() + "</div>");
+  function showDateWithToLocaleString() {
+    var d = new Date();
+    var d2 = new Date(d.toLocaleString());
+    document.write("<div>" + d2.toString() + "</div>");
+  }
 
-  var d4 = new Date();
-  document.write("<div>" + d4.toString() + "</div>");
+  showToString();
+  showToLocaleString();
+  showDateWithToLocaleString();
+
+  showToString();
+  showToLocaleString();
+  showDateWithToLocaleString();
+
 
 -->
 </script>
